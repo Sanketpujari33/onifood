@@ -1,0 +1,25 @@
+.container {
+    max-width: 1000px;
+    margin-top: 3.5rem;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+.popular_cuisines {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 1.25rem;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grid_container img{
+    width: 100%;
+    height: 100%;
+}
