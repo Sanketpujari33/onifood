@@ -77,7 +77,7 @@ function LoginPage() {
           {path === "/login" ? (
             <h2 className={styles.title}>Welcome Back</h2>
           ) : (
-            <h2 className={styles.title}>Welcome to Foodie</h2>
+            <h2 className={styles.title}>Welcome to Onifood</h2>
           )}
           {path === "/login" ? (
             <p className={styles.subTitle}>
