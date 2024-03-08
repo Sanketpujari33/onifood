@@ -1,0 +1,12 @@
+{
+  "builds": [
+    { "src": "backend/src/index.ts", "use": "@vercel/node" }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "headers": { "cache-control": "s-maxage=0" },
+      "dest": "backend/src/index.ts"
+    }
+  ]
+}
