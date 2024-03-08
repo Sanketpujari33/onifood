@@ -12,7 +12,7 @@ interface RegisterUserProps{
 export type searchParams = {key:string,val:any}[]
 
 function generateURL(pathname:string,query?:searchParams){
-    const apiUrl = process.env.REACT_APP_API_URL!;
+    const apiUrl = `${process.env.REACT_APP_API_URL!}`;
     const url = new URL(apiUrl);
     url.pathname = pathname
     if (query) {
