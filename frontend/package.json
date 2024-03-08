@@ -1,8 +1,8 @@
 {
-  "name": "foodie",
+  "name": "onifood",
   "version": "0.1.0",
   "private": true,
-  "author": "asit biswas",
+  "author": "sanket pujari",
   "dependencies": {
     "@googlemaps/js-api-loader": "^1.15.2",
     "@reduxjs/toolkit": "^1.9.5",

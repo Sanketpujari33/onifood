@@ -14,7 +14,7 @@ if(process.env.NODE_ENV==="development"){
   app.use(cors({
     exposedHeaders: ['Cookie',"Authorization"],
     credentials:true,
-    origin: "https://onifood.vercel.app",
+    origin: 'http://127.0.0.1:3000'
   }));
 }
 app.use(express.json());

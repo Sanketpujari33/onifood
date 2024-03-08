@@ -9,7 +9,7 @@
     "test": "ts-node src/main.ts"
   },
   "keywords": [],
-  "author": "",
+  "author": "sanket pujari",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",

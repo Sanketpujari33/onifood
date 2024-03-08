@@ -9,7 +9,7 @@ function NavbarSm() {
     <ul className={styles.mobileNavigation}>
       <Link to={"/"} className={path==="/"? styles.navItem__active:styles.navItem}>
         <Logo className={styles.logo} fill={path==="/"?"":"#3d4152"}/>
-        <p className={styles.navItemText}>foodie</p>
+        <p className={styles.navItemText}>Onifood</p>
       </Link>
       <Link to={"/search"} className={path==="/search"? styles.navItem__active:styles.navItem}>
         <Search className={styles.icon} />

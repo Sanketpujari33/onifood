@@ -8,9 +8,7 @@ function Order() {
   return orders.length !== 0 ? (
     <>
         <h2 className={Styles.title}>Orders</h2>
-      {orders.map((obj) => {
-        return <OrderItem key={obj._id} order={obj}/>;
-      })}
+      {orders.map((obj) => <OrderItem key={obj._id} order={obj}/>)}
     </>
   ) : (
     <div className={Styles.noOrder}>
