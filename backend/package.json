@@ -5,7 +5,8 @@
   "main": "src/index.ts",
   "scripts": {
     "start": "nodemon",
-    "build": "nodemon",
+    "dev": "nodemon", 
+    "build": "npm i",
     "test": "ts-node src/main.ts"
   },
   "keywords": [],
