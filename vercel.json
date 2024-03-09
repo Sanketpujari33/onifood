@@ -1,9 +1,9 @@
 {
   "builds": [
-    { "src": "backend/src/app.js", "use": "@now/node" },
+    { "src": "backend/src/index.ts", "use": "@vercel/node" },
     {
       "src": "frontend/package.json",
-      "use": "@now/static-build",
+      "use": "@vercel/static-build",
       "config": { "distDir": "build" }
     }
   ],
@@ -11,7 +11,7 @@
     {
       "src": "/api/(.*)",
       "headers": { "cache-control": "s-maxage=0" },
-      "dest": "api/src/app.js"
+      "dest": "backend/src/index.ts"
     },
     {
       "src": "/static/(.*)",
@@ -19,6 +19,7 @@
       "dest": "frontend/static/$1"
     },
     { "src": "/favicon.ico", "dest": "frontend/favicon.ico" },
+    { "src": "/logo(.*)", "dest": "frontend/logo$1" },
     {
       "src": "/asset-manifest.json",
       "dest": "frontend/asset-manifest.json"
